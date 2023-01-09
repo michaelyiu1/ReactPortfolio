@@ -9,11 +9,9 @@ import Portfolio from './components';
 import Resume from './components';
 import Footer from './components';
 
-
-
 function App() {
   
-  const pages = ['Home', 'About me', 'Portfolio', 'Resume'];
+  const pages = ['Home', 'About Me', 'Portfolio', 'Resume', 'Contact'];
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
