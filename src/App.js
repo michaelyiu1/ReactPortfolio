@@ -1,13 +1,8 @@
-import './App.css';
-import Header from './components';
-import NavBar from './components';
-import About from './components';
-import Contact from './components';
-import Page from './components';
-import PageContent from './components';
-import Portfolio from './components';
-import Resume from './components';
-import Footer from './components';
+import React, { useState } from "react";
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Page from './components/Page';
+import Footer from './components/Footer';
 
 function App() {
   

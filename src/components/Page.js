@@ -1,12 +1,12 @@
 import React from 'react';
-import App from '../App.js';
 import Home from './Home';
 import About from './About';
 import Portfolio from './Portfolio';
 import Resume from './Resume';
+import Contact from './Contact';
 
 
-const Page = ({currentPage}) => {
+function Page({currentPage}) {
     
     const pageContent = () => {
         switch(currentPage) {
@@ -28,14 +28,12 @@ const Page = ({currentPage}) => {
         };
     };
 
-
     return (
         <div>
             <h1>{currentPage}</h1>
             <div>{pageContent()}</div>    
         </div>
-
-    )
+    );
 
 };
 
