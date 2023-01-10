@@ -1,36 +1,28 @@
 import React from 'react';
-import Home from './Home';
 import About from './About';
 import Portfolio from './Portfolio';
 import Resume from './Resume';
 import Contact from './Contact';
 
-
 function Page({currentPage}) {
     
     const pageContent = () => {
         switch(currentPage) {
-            case 'Home':
-                return <Home/>;
-                break;
             case 'About Me':
                 return <About/>;
-                break;
-            case 'Porfolio':
-                return <Portfolio/>
-                break;
+            case 'Portfolio':
+                return <Portfolio/>;
             case 'Resume':
-                return <Resume/>
-                break; 
+                return <Resume/>;
             case 'Contact':
                 return <Contact/>;
-                break;
+            default:
+                return <About/>
         };
     };
 
     return (
         <div>
-            <h1>{currentPage}</h1>
             <div>{pageContent()}</div>    
         </div>
     );
